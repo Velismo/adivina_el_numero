@@ -1,10 +1,13 @@
+#First we import the library to get the random numbers
 import random
 
-n=random.randrange(1,20)
-nu=int(input('Adivina el número que he elegido: '))
-while nu!=n:
-    if nu>n:
-        nu=int(input('El numero es más pequeño'))
-    elif nu<n:
-        nu=int(input('El numero elegido es más grande'))
-print('Enhorabuena!! ',n, ' es el número secreto' )
+#This is a counter for the number of guess
+guessCounter = 0
+
+#Now we add some lines to interact with the player and a varable to save the name given
+print('¡Hola! ¿Cómo te llamas?')
+pName = input()
+
+#Lets use the library random in a new variable that receive a random number between 1 and 20
+number = random.randint(1, 20)
+print('¡Bienvenido ' + pName + '! Estoy pensando un número entre 1 y 20')
