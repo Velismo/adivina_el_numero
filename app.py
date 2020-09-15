@@ -10,7 +10,7 @@ pName = input()
 
 #Lets use the library random in a new variable that receive a random number between 1 and 20
 number = random.randint(1, 20)
-print('¡Bienvenido ' + pName + '! Estoy pensando un número entre 1 y 20')
+print('¡Bienvenido ' + pName + '! Estoy pensando un número entre 1 y 20. Tienes seis intentos para acertarlo.')
 
 #And here comes the magic. First let's check how many guesses do we have
 while guessCounter < 6:
@@ -33,7 +33,7 @@ while guessCounter < 6:
 #Out of the loop we check if we guess the correct number or not
 if guess == number:
     guessCounter = str(guessCounter)
-    print('¡Excelente, '+ pName + '! Has adivinado el número que estaba pensando en ' + guessCounter + 'intentos.')
+    print('¡Excelente, '+ pName + '! Has adivinado el número que estaba pensando en ' + guessCounter + ' intentos.')
 
 if guess != number:
     number = str(number)
